@@ -16,12 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // asdasdasd
+    
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    //这是GGGGGGGGGG
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
