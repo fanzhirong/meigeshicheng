@@ -17,9 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    UIRemoteNotificationType type = UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeBadge;
+    UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:type categories:nil];
+    [application registerUserNotificationSettings:setting];
     return YES;
 }
-
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"%@",deviceToken);
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     
 }
