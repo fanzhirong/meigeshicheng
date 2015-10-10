@@ -7,19 +7,41 @@
 //
 
 #import "HomeViewController.h"
-#import <AFNetworking.h>
+#import "NetWorking.h"
+#import "HomeBean.h"
+#import "HomeHeaderTableViewCell.h"
+#import "HomeDetailTableViewCell.h"
+
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong)UITableView *table;
+@property (nonatomic,strong)NSMutableArray *dataArray;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self initData];
     [self setViews];
     [self setTable];
+    [self requestData];
+}
+#pragma mark ----初始化数据对象
+-(void)initData
+{
+    _dataArray = [NSMutableArray array];
+}
+#pragma mark ----下载网络数据
+-(void)requestData
+{
+    NSString *pathString = @"http://app.gegejia.com/yangege/appNative/resource/homeDetail";
+   [NetWorking getNetWorkData:pathString sucess:^(id object) {
+       self.dataArray = (NSMutableArray *)[HomeBean netdataToHomeArr:object];
+       [_table reloadData];
+   } fail:^(NSError *error) {
+       NSLog(@"%@",error);
+   }];
 }
 #pragma mark ----设置navigation tabar
 -(void)setViews
@@ -59,21 +81,45 @@
     _table.dataSource = self;
     [self.view addSubview:_table];
     
-   // _table registerNib:<#(UINib *)#> forCellReuseIdentifier:<#(NSString *)#>
+    [_table registerNib:[UINib nibWithNibName:@"HomeHeaderTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeHeaderCell"];
+    [_table registerNib:[UINib nibWithNibName:@"HomeDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeDetailCell"];
     
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identy = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identy];
+    if (indexPath.section == 0)
+    {
+    static NSString *identy = @"HomeHeaderCell";
+    HomeHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identy];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identy];
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"HomeHeaderTableViewCell" owner:self options:nil]firstObject];
     }
-    return cell;
+        return cell;
+    }
+    else
+    {
+        static NSString *identy = @"HomeDetailCell";
+        HomeDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identy];
+        if (!cell) {
+            cell = [[[NSBundle mainBundle]loadNibNamed:@"HomeDetailTableViewCell" owner:self options:nil]firstObject];
+        }
+        [cell setCellData:self.dataArray[indexPath.row]];
+        return cell;
+    }
 }
+
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    
+//}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    if (section == 0) {
+        return 1;
+    }
+    else
+        return self.dataArray.count;
+    
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -81,7 +127,13 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    if (indexPath.section == 0) {
+        return 170;
+    }
+    else
+    {
+        return 170;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

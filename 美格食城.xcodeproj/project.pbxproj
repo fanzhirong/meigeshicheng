@@ -355,6 +355,9 @@
 		B0D782241BC68EE500402FC8 /* HomeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D782221BC68EE500402FC8 /* HomeDetailTableViewCell.xib */; };
 		B0D782291BC75F0500402FC8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B0D782281BC75F0500402FC8 /* Podfile */; };
 		B0D7822C1BC7707100402FC8 /* NetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7822B1BC7707100402FC8 /* NetWorking.m */; };
+		B0D7822F1BC7D20E00402FC8 /* HomeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7822E1BC7D20E00402FC8 /* HomeBean.m */; };
+		B0D782321BC7DF1200402FC8 /* ZJModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782311BC7DF1200402FC8 /* ZJModelTool.m */; };
+		B0D782351BC8B63B00402FC8 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782341BC8B63B00402FC8 /* HeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -732,6 +735,12 @@
 		B0D782281BC75F0500402FC8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B0D7822A1BC7707100402FC8 /* NetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorking.h; sourceTree = "<group>"; };
 		B0D7822B1BC7707100402FC8 /* NetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorking.m; sourceTree = "<group>"; };
+		B0D7822D1BC7D20E00402FC8 /* HomeBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBean.h; sourceTree = "<group>"; };
+		B0D7822E1BC7D20E00402FC8 /* HomeBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBean.m; sourceTree = "<group>"; };
+		B0D782301BC7DF1200402FC8 /* ZJModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJModelTool.h; sourceTree = "<group>"; };
+		B0D782311BC7DF1200402FC8 /* ZJModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJModelTool.m; sourceTree = "<group>"; };
+		B0D782331BC8B63B00402FC8 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		B0D782341BC8B63B00402FC8 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -845,8 +854,12 @@
 		B026946A1BBBCD7300FA4A19 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
+				B0D782301BC7DF1200402FC8 /* ZJModelTool.h */,
+				B0D782311BC7DF1200402FC8 /* ZJModelTool.m */,
 				B0D7822A1BC7707100402FC8 /* NetWorking.h */,
 				B0D7822B1BC7707100402FC8 /* NetWorking.m */,
+				B0D7822D1BC7D20E00402FC8 /* HomeBean.h */,
+				B0D7822E1BC7D20E00402FC8 /* HomeBean.m */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -875,6 +888,8 @@
 		B026946F1BBBCD7300FA4A19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B0D782331BC8B63B00402FC8 /* HeadView.h */,
+				B0D782341BC8B63B00402FC8 /* HeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1318,6 +1333,7 @@
 				TargetAttributes = {
 					B026943F1BBBC98F00FA4A19 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = RHWWUSZQV3;
 					};
 					B02694581BBBC99000FA4A19 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1741,9 +1757,12 @@
 				B0D7822C1BC7707100402FC8 /* NetWorking.m in Sources */,
 				B02694491BBBC99000FA4A19 /* AppDelegate.m in Sources */,
 				B0D7821A1BC688D100402FC8 /* GeTabBarController.m in Sources */,
+				B0D782351BC8B63B00402FC8 /* HeadView.m in Sources */,
 				B0D782131BC6864800402FC8 /* CartViewController.m in Sources */,
+				B0D782321BC7DF1200402FC8 /* ZJModelTool.m in Sources */,
 				B0D782231BC68EE500402FC8 /* HomeDetailTableViewCell.m in Sources */,
 				B02694461BBBC99000FA4A19 /* main.m in Sources */,
+				B0D7822F1BC7D20E00402FC8 /* HomeBean.m in Sources */,
 				B0D782151BC6864800402FC8 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1873,12 +1892,13 @@
 			baseConfigurationReference = 44EE2422186426492B7424B7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.fzr.GeGe";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "美格食城/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6ffc01b2-8288-433b-9c5d-8b4516ccdaff";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1887,12 +1907,13 @@
 			baseConfigurationReference = 96F24DC33D34C3805FE01704 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.fzr.GeGe";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "美格食城/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6ffc01b2-8288-433b-9c5d-8b4516ccdaff";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

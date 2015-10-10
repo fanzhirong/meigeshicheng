@@ -10,4 +10,7 @@
 
 @interface HomeHeaderTableViewCell : UITableViewCell
 
+
+
+-(void)setCellData:(id)object;
 @end

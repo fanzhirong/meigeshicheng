@@ -17,14 +17,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIRemoteNotificationType type = UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeBadge;
+    UIUserNotificationType type = UIUserNotificationTypeBadge|UIUserNotificationTypeSound|UIUserNotificationTypeAlert;
     UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:type categories:nil];
     [application registerUserNotificationSettings:setting];
+    [application registerForRemoteNotifications];
     return YES;
 }
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    NSLog(@"%@",deviceToken);
+    
+}
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    //接收到本地推送消息
+}
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    //接收到远程推送消息
+}
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    //注册推送失败
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     

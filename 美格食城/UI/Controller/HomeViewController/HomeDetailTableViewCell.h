@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeDetailTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *DetailImage;
+@property (weak, nonatomic) IBOutlet UIImageView *CountryImage;
 
+@property (weak, nonatomic) IBOutlet UILabel *CountryContent;
+@property (weak, nonatomic) IBOutlet UILabel *Content;
+
+-(void)setCellData:(id)object;
 @end
