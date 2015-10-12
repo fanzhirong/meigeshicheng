@@ -349,8 +349,6 @@
 		B0D782161BC6864800402FC8 /* MallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7820E1BC6864800402FC8 /* MallViewController.m */; };
 		B0D782171BC6864800402FC8 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782121BC6864800402FC8 /* UserViewController.m */; };
 		B0D7821A1BC688D100402FC8 /* GeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782191BC688D100402FC8 /* GeTabBarController.m */; };
-		B0D7821E1BC68ECE00402FC8 /* HomeHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7821C1BC68ECE00402FC8 /* HomeHeaderTableViewCell.m */; };
-		B0D7821F1BC68ECE00402FC8 /* HomeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D7821D1BC68ECE00402FC8 /* HomeHeaderTableViewCell.xib */; };
 		B0D782231BC68EE500402FC8 /* HomeDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782211BC68EE500402FC8 /* HomeDetailTableViewCell.m */; };
 		B0D782241BC68EE500402FC8 /* HomeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D782221BC68EE500402FC8 /* HomeDetailTableViewCell.xib */; };
 		B0D782291BC75F0500402FC8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B0D782281BC75F0500402FC8 /* Podfile */; };
@@ -358,6 +356,12 @@
 		B0D7822F1BC7D20E00402FC8 /* HomeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D7822E1BC7D20E00402FC8 /* HomeBean.m */; };
 		B0D782321BC7DF1200402FC8 /* ZJModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782311BC7DF1200402FC8 /* ZJModelTool.m */; };
 		B0D782351BC8B63B00402FC8 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D782341BC8B63B00402FC8 /* HeadView.m */; };
+		B0FC1D531BCA1295000D8A06 /* ListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D521BCA1295000D8A06 /* ListBean.m */; };
+		B0FC1D561BCA1498000D8A06 /* HomeListBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D551BCA1498000D8A06 /* HomeListBean.m */; };
+		B0FC1D591BCA14AF000D8A06 /* HomeDetailFirstBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D581BCA14AF000D8A06 /* HomeDetailFirstBean.m */; };
+		B0FC1D5C1BCA14C3000D8A06 /* HomeDetailSecondBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D5B1BCA14C3000D8A06 /* HomeDetailSecondBean.m */; };
+		B0FC1D5F1BCA391D000D8A06 /* HeaderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D5E1BCA391D000D8A06 /* HeaderImage.m */; };
+		B0FC1D621BCA4BFC000D8A06 /* ScrollViewLib.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC1D611BCA4BFC000D8A06 /* ScrollViewLib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -726,9 +730,6 @@
 		B0D782121BC6864800402FC8 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		B0D782181BC688D100402FC8 /* GeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeTabBarController.h; sourceTree = "<group>"; };
 		B0D782191BC688D100402FC8 /* GeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeTabBarController.m; sourceTree = "<group>"; };
-		B0D7821B1BC68ECE00402FC8 /* HomeHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderTableViewCell.h; sourceTree = "<group>"; };
-		B0D7821C1BC68ECE00402FC8 /* HomeHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderTableViewCell.m; sourceTree = "<group>"; };
-		B0D7821D1BC68ECE00402FC8 /* HomeHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		B0D782201BC68EE500402FC8 /* HomeDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailTableViewCell.h; sourceTree = "<group>"; };
 		B0D782211BC68EE500402FC8 /* HomeDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailTableViewCell.m; sourceTree = "<group>"; };
 		B0D782221BC68EE500402FC8 /* HomeDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -741,6 +742,18 @@
 		B0D782311BC7DF1200402FC8 /* ZJModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJModelTool.m; sourceTree = "<group>"; };
 		B0D782331BC8B63B00402FC8 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
 		B0D782341BC8B63B00402FC8 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		B0FC1D511BCA1295000D8A06 /* ListBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListBean.h; sourceTree = "<group>"; };
+		B0FC1D521BCA1295000D8A06 /* ListBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListBean.m; sourceTree = "<group>"; };
+		B0FC1D541BCA1498000D8A06 /* HomeListBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeListBean.h; sourceTree = "<group>"; };
+		B0FC1D551BCA1498000D8A06 /* HomeListBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeListBean.m; sourceTree = "<group>"; };
+		B0FC1D571BCA14AF000D8A06 /* HomeDetailFirstBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailFirstBean.h; sourceTree = "<group>"; };
+		B0FC1D581BCA14AF000D8A06 /* HomeDetailFirstBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailFirstBean.m; sourceTree = "<group>"; };
+		B0FC1D5A1BCA14C3000D8A06 /* HomeDetailSecondBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailSecondBean.h; sourceTree = "<group>"; };
+		B0FC1D5B1BCA14C3000D8A06 /* HomeDetailSecondBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailSecondBean.m; sourceTree = "<group>"; };
+		B0FC1D5D1BCA391D000D8A06 /* HeaderImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderImage.h; sourceTree = "<group>"; };
+		B0FC1D5E1BCA391D000D8A06 /* HeaderImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderImage.m; sourceTree = "<group>"; };
+		B0FC1D601BCA4BFC000D8A06 /* ScrollViewLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewLib.h; sourceTree = "<group>"; };
+		B0FC1D611BCA4BFC000D8A06 /* ScrollViewLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewLib.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -860,6 +873,16 @@
 				B0D7822B1BC7707100402FC8 /* NetWorking.m */,
 				B0D7822D1BC7D20E00402FC8 /* HomeBean.h */,
 				B0D7822E1BC7D20E00402FC8 /* HomeBean.m */,
+				B0FC1D511BCA1295000D8A06 /* ListBean.h */,
+				B0FC1D521BCA1295000D8A06 /* ListBean.m */,
+				B0FC1D541BCA1498000D8A06 /* HomeListBean.h */,
+				B0FC1D551BCA1498000D8A06 /* HomeListBean.m */,
+				B0FC1D571BCA14AF000D8A06 /* HomeDetailFirstBean.h */,
+				B0FC1D581BCA14AF000D8A06 /* HomeDetailFirstBean.m */,
+				B0FC1D5A1BCA14C3000D8A06 /* HomeDetailSecondBean.h */,
+				B0FC1D5B1BCA14C3000D8A06 /* HomeDetailSecondBean.m */,
+				B0FC1D5D1BCA391D000D8A06 /* HeaderImage.h */,
+				B0FC1D5E1BCA391D000D8A06 /* HeaderImage.m */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -890,6 +913,8 @@
 			children = (
 				B0D782331BC8B63B00402FC8 /* HeadView.h */,
 				B0D782341BC8B63B00402FC8 /* HeadView.m */,
+				B0FC1D601BCA4BFC000D8A06 /* ScrollViewLib.h */,
+				B0FC1D611BCA4BFC000D8A06 /* ScrollViewLib.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1245,9 +1270,6 @@
 			children = (
 				B0D7820A1BC6864800402FC8 /* HomeViewController.h */,
 				B0D7820B1BC6864800402FC8 /* HomeViewController.m */,
-				B0D7821B1BC68ECE00402FC8 /* HomeHeaderTableViewCell.h */,
-				B0D7821C1BC68ECE00402FC8 /* HomeHeaderTableViewCell.m */,
-				B0D7821D1BC68ECE00402FC8 /* HomeHeaderTableViewCell.xib */,
 				B0D782201BC68EE500402FC8 /* HomeDetailTableViewCell.h */,
 				B0D782211BC68EE500402FC8 /* HomeDetailTableViewCell.m */,
 				B0D782221BC68EE500402FC8 /* HomeDetailTableViewCell.xib */,
@@ -1698,7 +1720,6 @@
 				B0D781C11BC61ECC00402FC8 /* style_received@2x.png in Resources */,
 				B0D781D81BC61ECC00402FC8 /* tabtime@2x.png in Resources */,
 				B0D781021BC61ECC00402FC8 /* cuservice3@2x.png in Resources */,
-				B0D7821F1BC68ECE00402FC8 /* HomeHeaderTableViewCell.xib in Resources */,
 				B0D781E81BC61ECC00402FC8 /* user_signin@2x.png in Resources */,
 				B0D7818B1BC61ECC00402FC8 /* pay_wx@3x.png in Resources */,
 			);
@@ -1752,17 +1773,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D782171BC6864800402FC8 /* UserViewController.m in Sources */,
-				B0D7821E1BC68ECE00402FC8 /* HomeHeaderTableViewCell.m in Sources */,
 				B0D782161BC6864800402FC8 /* MallViewController.m in Sources */,
 				B0D7822C1BC7707100402FC8 /* NetWorking.m in Sources */,
+				B0FC1D621BCA4BFC000D8A06 /* ScrollViewLib.m in Sources */,
 				B02694491BBBC99000FA4A19 /* AppDelegate.m in Sources */,
 				B0D7821A1BC688D100402FC8 /* GeTabBarController.m in Sources */,
+				B0FC1D561BCA1498000D8A06 /* HomeListBean.m in Sources */,
 				B0D782351BC8B63B00402FC8 /* HeadView.m in Sources */,
+				B0FC1D531BCA1295000D8A06 /* ListBean.m in Sources */,
 				B0D782131BC6864800402FC8 /* CartViewController.m in Sources */,
+				B0FC1D591BCA14AF000D8A06 /* HomeDetailFirstBean.m in Sources */,
 				B0D782321BC7DF1200402FC8 /* ZJModelTool.m in Sources */,
 				B0D782231BC68EE500402FC8 /* HomeDetailTableViewCell.m in Sources */,
 				B02694461BBBC99000FA4A19 /* main.m in Sources */,
+				B0FC1D5F1BCA391D000D8A06 /* HeaderImage.m in Sources */,
 				B0D7822F1BC7D20E00402FC8 /* HomeBean.m in Sources */,
+				B0FC1D5C1BCA14C3000D8A06 /* HomeDetailSecondBean.m in Sources */,
 				B0D782151BC6864800402FC8 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,12 @@
 @interface HomeDetailTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *DetailImage;
 @property (weak, nonatomic) IBOutlet UIImageView *CountryImage;
+@property (weak, nonatomic) IBOutlet UIButton *storeButton;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *CountryContent;
 @property (weak, nonatomic) IBOutlet UILabel *Content;
+@property (weak, nonatomic) IBOutlet UIView *topView;
 
 -(void)setCellData:(id)object;
 @end
